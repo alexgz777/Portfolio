@@ -1,0 +1,38 @@
+.contact {
+  text-align: center;
+  height: 40em;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(200px, 1fr);
+  margin-top: 3em;
+  justify-items: center;
+}
+.Name {
+  margin: 1em;
+  width: 25em;
+}
+.Email {
+  margin: 1em;
+  width: 25em;
+}
+.Subject {
+  margin: 1em;
+  width: 25em;
+}
+.Message {
+  margin: 1em;
+  width: 25em;
+  height: 6em;
+}
+.button {
+  display: grid;
+  margin: 1em;
+  width: 25em;
+  width: 10em;
+  justify-self: center;
+}
+.error {
+  color: red;
+  font-size: 13px;
+}

@@ -1,0 +1,75 @@
+.navbar {
+  background-color: #1c191a;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  list-style: none;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.navbar__logo {
+  height: 10em;
+  justify-self: center;
+}
+.navbar__btn--home {
+  color: #f4b324;
+  background-color: #1c191a;
+  border: none;
+  margin-top: 4.5em;
+  text-decoration: none;
+}
+.navbar__btn--project {
+  color: #f4b324;
+  background-color: #1c191a;
+  border: none;
+  margin-top: 4.5em;
+  text-decoration: none;
+}
+.navbar__btn--skills {
+  color: #f4b324;
+  background-color: #1c191a;
+  border: none;
+  margin-top: 4.5em;
+  text-decoration: none;
+}
+.navbar__btn--contact {
+  color: #f4b324;
+  background-color: #1c191a;
+  border: none;
+  margin-top: 4.5em;
+  text-decoration: none;
+}
+
+.navbar__btn--home:hover {
+  color: #f6e7d8;
+}
+.navbar__btn--project:hover {
+  color: #f6e7d8;
+}
+.navbar__btn--skills:hover {
+  color: #f6e7d8;
+}
+.navbar__btn--contact:hover {
+  color: #f6e7d8;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+.flags {
+  width: 30px;
+  height: 30px;
+}
+.navbar__flags {
+  list-style: none;
+}
+.navbar__flags--li {
+  display: inline;
+}

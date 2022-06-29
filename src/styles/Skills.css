@@ -1,0 +1,49 @@
+.skills {
+  text-align: center;
+  height: 40em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.skills__ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+
+  justify-items: center;
+  align-items: center;
+
+  padding: 0;
+}
+.skills__span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.skills__span:hover {
+  background-image: linear-gradient(to right, #f4b324, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.logotypes {
+  height: 4em;
+  width: 4em;
+  display: grid;
+}
+.logotypes:hover {
+  height: 6em;
+  width: 6em;
+}
+.logotypes {
+  transition: linear 0.2s;
+}
+
+.logotypes__title {
+  font-weight: lighter;
+  font-size: 16px;
+}

@@ -1,0 +1,8 @@
+* {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+}
+
+.App {
+  background: linear-gradient(180deg, #1c191a 10%, #07a5c3 100%, #1c191a 1%);
+}
