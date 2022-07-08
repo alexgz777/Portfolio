@@ -67,9 +67,18 @@
   width: 30px;
   height: 30px;
 }
-.navbar__flags {
+.flags:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.navbar__flags--ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar__flags--li {
-  display: inline;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 0.75rem;
 }

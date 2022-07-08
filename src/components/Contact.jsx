@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
-import strings from "./languages/about.js";
+import strings from "../assets/languages/about";
 
 const Contact = ({ language }) => {
   const initialState = {
@@ -12,6 +12,18 @@ const Contact = ({ language }) => {
 
   const [form, setForm] = useState(initialState);
   const [error, setError] = useState({});
+
+  const [button, setButton] = useState(true);
+  useEffect(() => {
+    if (
+      form.Name.length > 0 &&
+      form.Email.length > 0 &&
+      form.Subject.length > 0 &&
+      form.Message.length > 0
+    )
+      setButton(false);
+    else setButton(true);
+  }, [form, setButton]);
 
   const emailValidate = (email) => {
     const regex =
@@ -37,7 +49,6 @@ const Contact = ({ language }) => {
   };
 
   const handleChange = (e) => {
-    e.preventDefault();
     setForm({
       ...form,
       [e.target.name]: e.target.value,
@@ -62,8 +73,10 @@ const Contact = ({ language }) => {
 
   return (
     <div className="contact">
-      <h1>{strings.languageContact[language].question}</h1>
-      <h2>{strings.languageContact[language].answer}</h2>
+      <div className="contact__title">
+        <h1>{strings.languageContact[language].question}</h1>
+        <h2>{strings.languageContact[language].answer}</h2>
+      </div>
       <form className="form">
         <input
           className="Name"
@@ -97,9 +110,9 @@ const Contact = ({ language }) => {
         />
         <p className="error">{error.Message}</p>
         <button
-          className="button"
-          disabled={true}
-          onSumbit={(e) => {
+          className="button__contact"
+          disabled={button}
+          onSubmit={(e) => {
             handleSubmit(e);
           }}
         >

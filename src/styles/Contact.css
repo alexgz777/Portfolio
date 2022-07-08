@@ -2,13 +2,22 @@
   text-align: center;
   height: 40em;
 }
+.contact__title:hover {
+  background-image: linear-gradient(to right, #f4b324, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s ease-in-out;
+}
 .form {
   display: grid;
   grid-template-columns: repeat(200px, 1fr);
   margin-top: 3em;
   justify-items: center;
 }
-.Name {
+.Name /* .Email .Subject .Message */ {
   margin: 1em;
   width: 25em;
 }
@@ -25,10 +34,9 @@
   width: 25em;
   height: 6em;
 }
-.button {
+.button__contact {
   display: grid;
   margin: 1em;
-  width: 25em;
   width: 10em;
   justify-self: center;
 }

@@ -4,7 +4,7 @@ import logoAlexis from "../assets/logoAlexis.png";
 import en from "../assets/icons/en.png";
 import es from "../assets/icons/es.png";
 import pt from "../assets/icons/pt.png";
-import strings from "./languages/about.js";
+import strings from "../assets/languages/about";
 
 export default function Navbar({ language, changeLanguage }) {
   const handleClick = (lang) => {
@@ -26,7 +26,7 @@ export default function Navbar({ language, changeLanguage }) {
       <a href="/contact" className="navbar__btn--contact">
         {strings.languageNavbar[language].contact}
       </a>
-      <ul className="navbar__flags">
+      <ul className="navbar__flags--ul">
         <li onClick={() => handleClick("en")} className="navbar__flags--li">
           <img src={en} alt="en-flag" className="flags" />
         </li>

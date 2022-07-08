@@ -106,14 +106,10 @@ const languageContact = {
 };
 //cargar proyectos
 const languageProjects = {
-  countries: { en: [], es: [], pt: [] },
-  food: { en: [], es: [], pt: [] },
+  Countries: { en: [], es: ["sd"], pt: [] },
+  DietLife: { en: [], es: ["sd"], pt: [] },
+  Videogames: { en: [], es: ["sd"], pt: [] },
 };
-
-const projects = [
-  { id: "", title: "", repository: "", link: "", image: "" },
-  { id: "", title: "", repository: "", link: "", image: "" },
-];
 
 const languageErrors = {
   en: {
@@ -135,7 +131,6 @@ const languageErrors = {
 export default {
   languagePage,
   languageProjects,
-  projects,
   languageContact,
   languageErrors,
   languageSkills,

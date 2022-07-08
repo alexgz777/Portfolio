@@ -5,18 +5,20 @@
   grid-template-rows: 20em 1fr 10em;
 }
 
-.photo{
+.photo {
   width: 20em;
   height: 20em;
   padding: 1em;
   margin-left: 6.5em;
+  border-radius: 50%;
+  border: none;
 }
 .about__desc--foto {
   display: grid;
   align-items: center;
 }
-.description:hover{
-  text-decoration:underline;
+.description:hover {
+  text-decoration: underline;
 }
 h1 {
   font-size: 40px;
@@ -27,7 +29,7 @@ h1 {
 
 h3 {
   color: #dbd3cb;
-  text-align:left;
+  text-align: left;
   width: 30em;
 }
 
@@ -40,7 +42,7 @@ h3 {
 }
 .button__cv:hover {
   transform: scale(1.2);
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .title1 {

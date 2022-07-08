@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import strings from "./languages/about.js";
+import strings from "../assets/languages/about.js";
 import resume from "../assets/resumes/resume.pdf";
 import logoAlexis from "../assets/logoAlexis.png";
 

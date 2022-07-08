@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Skills.css";
-import logotypes from "../components/images.js";
-import strings from "./languages/about.js";
+import logotypes from "../assets/skills/skillsLogotypes.js";
+import strings from "../assets/languages/about.js";
 
 const Skills = ({ language }) => {
   return (

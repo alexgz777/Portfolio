@@ -1,4 +1,55 @@
 .projects {
   text-align: center;
-  height: 40em;
+}
+.project__span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.project__span:hover {
+  background-image: linear-gradient(to right, #f4b324, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.githubLogo {
+  width: 2.5em;
+  height: 2.5em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.carrousel {
+  display: grid;
+  grid-template-columns: 10em 1fr 10em;
+  align-items: center;
+  justify-items: center;
+}
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  background-color: #1C191A;
+  color: #f4b324;
+  
+}
+.projectImage {
+  width: 50em;
+  height: 30em;
+  border-radius: 1em;
+}
+.points {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
