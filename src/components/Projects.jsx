@@ -22,7 +22,7 @@ const Projects = ({ language }) => {
   });
 
   return (
-    <div className="projects">
+    <div id="Projects" className="projects">
       <span className="project__span">Projects</span>
       <div className="container">
         <div className="carrousel">

@@ -1,6 +1,6 @@
 .contact {
   text-align: center;
-  height: 40em;
+  height: 35em;
 }
 .contact__title:hover {
   background-image: linear-gradient(to right, #f4b324, #000 50%);
@@ -17,7 +17,7 @@
   margin-top: 3em;
   justify-items: center;
 }
-.Name /* .Email .Subject .Message */ {
+.Name {
   margin: 1em;
   width: 25em;
 }

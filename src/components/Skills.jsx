@@ -5,7 +5,7 @@ import strings from "../assets/languages/about.js";
 
 const Skills = ({ language }) => {
   return (
-    <div className="skills">
+    <div id="Skills" className="skills">
       <span className="skills__span">
         {strings.languageSkills[language].titleSkills}
       </span>

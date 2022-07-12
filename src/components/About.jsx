@@ -4,9 +4,9 @@ import strings from "../assets/languages/about.js";
 import resume from "../assets/resumes/resume.pdf";
 import logoAlexis from "../assets/logoAlexis.png";
 
-function About({ language }) {
+const About = ({ language }) => {
   return (
-    <div className="about">
+    <div id="About" className="about">
       <div className="about__title">
         <h2 className="title1">{strings.languagePage[language].title}</h2>
         <div className="about__subtitle">
@@ -21,11 +21,24 @@ function About({ language }) {
       <div className="about__desc--photo">
         <img src={logoAlexis} className="photo" alt="photo" />
         <div className="desc">
-          <h3 className="description">{strings.languagePage[language].description[0]}</h3>
-          <h3 className="description">{strings.languagePage[language].description[1]}</h3>
-          <h3 className="description">{strings.languagePage[language].description[2]}</h3>
-          <h3 className="description">{strings.languagePage[language].description[3]}</h3>
-          <h3 className="description">{strings.languagePage[language].description[4]}</h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[0]}
+          </h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[1]}
+          </h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[2]}
+          </h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[3]}
+          </h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[4]}
+          </h3>
+          <h3 className="description">
+            {strings.languagePage[language].description[5]}
+          </h3>
         </div>
       </div>
       <button className="button__cv" href={resume} download={true}>
@@ -33,6 +46,6 @@ function About({ language }) {
       </button>
     </div>
   );
-}
+};
 
 export default About;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
 import strings from "../assets/languages/about";
+import emailjs from "emailjs-com";
 
 const Contact = ({ language }) => {
   const initialState = {
@@ -65,14 +66,23 @@ const Contact = ({ language }) => {
     e.preventDefault();
     setError(handleValidate(form));
     setForm(true);
-
-    /*     dispatch(postVideogame(form));
-     */ alert(strings.languageErrors[language].alert);
+    emailjs
+      .sendForm(
+        "service_ucl606g",
+        "template_pq5vfgs",
+        e.target,
+        "CeBfG9XWd5m_Ls-YY"
+      )
+      .then((res) => {
+        alert(strings.languageErrors[language].alert);
+        console.log(res.text);
+      });
+    e.target.reset();
     setForm(initialState);
   };
 
   return (
-    <div className="contact">
+    <div id="Contact" className="contact">
       <div className="contact__title">
         <h1>{strings.languageContact[language].question}</h1>
         <h2>{strings.languageContact[language].answer}</h2>
@@ -112,7 +122,7 @@ const Contact = ({ language }) => {
         <button
           className="button__contact"
           disabled={button}
-          onSubmit={(e) => {
+          onClick={(e) => {
             handleSubmit(e);
           }}
         >

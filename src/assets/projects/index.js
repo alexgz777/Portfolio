@@ -1,6 +1,7 @@
 import videogames from "../videogames.png";
 import dietlife from "../dietlife.png";
 import countries from "../countries.png";
+import dogs from "../dogs.png";
 
 export const projects = [
   {
@@ -23,5 +24,12 @@ export const projects = [
     repository: "https://github.com/alexgz777/DietLife-Project.git",
     link: "",
     image: dietlife,
+  },
+  {
+    id: 4,
+    title: "Dogs",
+    repository: "https://github.com/alexgz777/Dogs-webpage-project.git",
+    link: "",
+    image: dogs,
   },
 ];

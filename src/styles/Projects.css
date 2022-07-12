@@ -1,5 +1,8 @@
 .projects {
   text-align: center;
+  height: 600px;
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 .project__span {
   font-size: 40px;
