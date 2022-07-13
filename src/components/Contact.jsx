@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
 import strings from "../assets/languages/about";
-import emailjs from "emailjs-com";
-
+/* import emailjs from "emailjs-com";
+ */
 const Contact = ({ language }) => {
   const initialState = {
     Name: "",
