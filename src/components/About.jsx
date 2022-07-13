@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/About.css";
 import strings from "../assets/languages/about.js";
-import resume from "../assets/resumes/resume.pdf";
 import logoAlexis from "../assets/logoAlexis.png";
 
 const About = ({ language }) => {
@@ -41,9 +40,11 @@ const About = ({ language }) => {
           </h3>
         </div>
       </div>
-      <button className="button__cv" href={resume} download={true}>
-        {strings.languagePage[language].resume}
-      </button>
+      <a href={`../assets/resumes/${language}/resume.pdf`} download={true}>
+        <button className="button__cv">
+          {strings.languagePage[language].resume}
+        </button>
+      </a>
     </div>
   );
 };

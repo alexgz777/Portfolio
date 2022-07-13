@@ -37,13 +37,14 @@ const Projects = ({ language }) => {
                 alt="projectImage"
               />
             </a>
-            <h2>{projects[Item].title}</h2>
-            <p>{strings.languageProjects[projects[Item].title][language]}</p>
-            <a href={projects[Item].repository}>
-              <img src={github} className="githubLogo" alt="githubLogo" />
+            <a>
+              <h2>{projects[Item].title}</h2>
+              <p>{strings.languageProjects[projects[Item].title][language]}</p>
+              <a href={projects[Item].repository}>
+                <img src={github} className="githubLogo" alt="githubLogo" />
+              </a>
             </a>
           </div>
-
           <button className="button" onClick={(e) => goItem(e)}>
             {">"}
           </button>

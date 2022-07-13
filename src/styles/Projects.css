@@ -1,6 +1,6 @@
 .projects {
   text-align: center;
-  height: 600px;
+  height: 35em;
   margin-top: 10em;
   margin-bottom: 10em;
 }
@@ -21,6 +21,10 @@
   width: 2.5em;
   height: 2.5em;
 }
+.githubLogo:hover {
+  width: 2.7em;
+  height: 2.7em;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -31,19 +35,26 @@
   align-items: center;
   justify-items: center;
 }
+/* .carrousel__item {
+  display: grid;
+  grid-template-columns: 1fr 10em;
+} */
 .button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   align-items: center;
-  background-color: #1C191A;
+  background-color: #1c191a;
   color: #f4b324;
-  
+}
+.button:hover {
+  width: 2.7em;
+  height: 2.7em;
 }
 .projectImage {
-  width: 50em;
-  height: 30em;
+  width: 40em;
+  height: 25em;
   border-radius: 1em;
 }
 .points {
