@@ -62,7 +62,7 @@ const Contact = ({ language }) => {
     );
   };
 
-  const handleSubmit = (e) => {
+ /*  const handleSubmit = (e) => {
     e.preventDefault();
     setError(handleValidate(form));
     setForm(true);
@@ -79,7 +79,7 @@ const Contact = ({ language }) => {
       });
     e.target.reset();
     setForm(initialState);
-  };
+  }; */
 
   return (
     <div id="Contact" className="contact">
@@ -87,7 +87,15 @@ const Contact = ({ language }) => {
         <h1>{strings.languageContact[language].question}</h1>
         <h2>{strings.languageContact[language].answer}</h2>
       </div>
-      <form className="form">
+      <form
+        name="contactForm"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+        className="form"
+      >
+        <input type="hidden" name="form-name" value="contactForm" />
+
         <input
           className="Name"
           value={form.Name}
@@ -122,9 +130,10 @@ const Contact = ({ language }) => {
         <button
           className="button__contact"
           disabled={button}
-          onClick={(e) => {
+          type="submit"
+          /*  onClick={(e) => {
             handleSubmit(e);
-          }}
+          }} */
         >
           {strings.languageContact[language].send}
         </button>
