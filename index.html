@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="/src/assets/logoAlexis.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexis Gonzalez</title>
+    <title>Alex Gonz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,13 @@
     />
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="Name" />
+      <input type="email" name="Email" />
+      <input name="Subject" />
+      <input name="Message" />
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
