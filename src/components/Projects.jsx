@@ -31,11 +31,11 @@ const Projects = ({ language }) => {
           </button>
           <div className="carrousel__item">
             <a href={projects[Item].title}>
-              <img
+              {/* <img
                 src={projects[Item].image}
                 className="projectImage"
                 alt="projectImage"
-              />
+              /> */}
             </a>
             <a>
               <h2>{projects[Item].title}</h2>
