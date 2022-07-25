@@ -4,13 +4,14 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  margin-bottom: 1em;
 }
 .skills__ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 150px);
   grid-template-rows: repeat(3, 150px);
-
+  gap: 2em;
   justify-items: center;
   align-items: center;
 

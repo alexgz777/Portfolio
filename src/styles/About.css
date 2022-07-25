@@ -3,8 +3,14 @@
   align-items: center;
   justify-items: center;
   grid-template-rows: 16em 1fr 5em;
-}
+  margin-bottom: 5em;
 
+}
+.contact__button{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3em;
+}
 .photo {
   width: 20em;
   height: 20em;
@@ -37,11 +43,26 @@ h3 {
 }
 
 .button__cv {
-  width: 10em;
-  height: 3em;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  border: none;
   justify-self: center;
-  background-color: #1f1f1f;
-  color: #f6e7d8;
+  background-color: #000000;
+  color: #164651;
+  font-size: 25px;
+  font-weight: bolder; 
+}
+.button__gl {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  border: none;
+  justify-self: center;
+}
+.button__gl:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 .button__cv:hover {
   transform: scale(1.2);

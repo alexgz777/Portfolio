@@ -5,6 +5,8 @@ import logoAlexis from "../assets/images/myphoto.png";
 import en from "../assets/resumes/en/AlexisGonzalez-resume.pdf";
 import es from "../assets/resumes/es/AlexisGonzalez-CV.pdf";
 import pt from "../assets/resumes/pt/AlexisGonzalez-CV.pdf";
+import linkedin from "../assets/logos/linkedin.svg";
+import github from "../assets/logos/github.svg";
 
 const About = ({ language }) => {
   const resumes = { en, es, pt };
@@ -44,11 +46,20 @@ const About = ({ language }) => {
           </h3>
         </div>
       </div>
-      <a href={resumes[language]} download={true}>
-        <button className="button__cv">
-          {strings.languagePage[language].resume}
-        </button>
-      </a>
+
+      <div className="contact__button">
+        <a href={resumes[language]} download={true}>
+          <button className="button__cv">
+            {strings.languagePage[language].resume}
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/alex-gonz/">
+          <img className="button__gl" src={linkedin} alt="linkedin" />
+        </a>
+        <a href="https://github.com/alexgz777">
+          <img className="button__gl" src={github} alt="github" />
+        </a>
+      </div>
     </div>
   );
 };

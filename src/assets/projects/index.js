@@ -15,7 +15,7 @@ export const projects = [
     id: 2,
     title: "Countries",
     repository: "https://github.com/alexgz777/Countries-project.git",
-    link: "https://countries-project-indol.vercel.app/home",
+    link: "https://countries-project-indol.vercel.app/",
     image: countries,
   },
   {

@@ -32,7 +32,7 @@ const languagePage = {
       "I'm continuing my learning process to give better solutions",
       "My life goal is to live traveling around the world, working on what I love to do.",
     ],
-    resume: "My CV",
+    resume: "CV",
   },
   es: {
     title: "Hola!",
@@ -46,7 +46,7 @@ const languagePage = {
       "A diario continuo con mi aprendizaje para darte las soluciones que necesitas",
       "Mi objetivo de vida es conocer mas de este maravilloso mundo trabajando de lo que me gusta",
     ],
-    resume: "Mi CV",
+    resume: "CV",
   },
   pt: {
     title: "Oi!",
@@ -60,7 +60,7 @@ const languagePage = {
       "Diariamente sigo meu apredizado para te dar isso que precisa.",
       "Meu objetivo de vida e viajar pelo mundo, trabalhando no que eu amo façer",
     ],
-    resume: "Meu CV",
+    resume: "CV",
   },
 };
 
