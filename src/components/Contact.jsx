@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
 import strings from "../assets/languages/about";
-/* import emailjs from "emailjs-com";
- */
+
 const Contact = ({ language }) => {
   const initialState = {
     Name: "",
@@ -62,40 +61,14 @@ const Contact = ({ language }) => {
     );
   };
 
-  /*  const handleSubmit = (e) => {
-    e.preventDefault();
-    setError(handleValidate(form));
-    setForm(true);
-    emailjs
-      .sendForm(
-        "service_ucl606g",
-        "template_pq5vfgs",
-        e.target,
-        "CeBfG9XWd5m_Ls-YY"
-      )
-      .then((res) => {
-        alert(strings.languageErrors[language].alert);
-        console.log(res.text);
-      });
-    e.target.reset();
-    setForm(initialState);
-  }; */
-
   return (
     <div id="Contact" className="contact">
       <div className="contact__title">
         <h1>{strings.languageContact[language].question}</h1>
         <h2>{strings.languageContact[language].answer}</h2>
       </div>
-      <form
-        name="contact"
-        method="post"
-        /*  data-netlify="true"
-        onSubmit="submit" */
-        className="form"
-      >
+      <form name="contact" method="post" className="form">
         <input type="hidden" name="form-name" value="contact" />
-
         <input
           className="Name"
           value={form.Name}
@@ -127,14 +100,7 @@ const Contact = ({ language }) => {
           onChange={(e) => handleChange(e)}
         />
         <p className="error">{error.Message}</p>
-        <button
-          className="button__contact"
-          disabled={button}
-          type="submit"
-          /*  onClick={(e) => {
-            handleSubmit(e);
-          }} */
-        >
+        <button className="button__contact" disabled={button} type="submit">
           {strings.languageContact[language].send}
         </button>
       </form>
