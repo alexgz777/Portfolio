@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/About.css";
 import strings from "../assets/languages/about.js";
-import logoAlexis from "../assets/logoAlexis.png";
+import logoAlexis from "../assets/images/myphoto.png";
+import en from "../assets/resumes/en/AlexisGonzalez-resume.pdf";
+import es from "../assets/resumes/es/AlexisGonzalez-CV.pdf";
+import pt from "../assets/resumes/pt/AlexisGonzalez-CV.pdf";
 
 const About = ({ language }) => {
+  const resumes = { en, es, pt };
   return (
     <div id="About" className="about">
       <div className="about__title">
@@ -40,7 +44,7 @@ const About = ({ language }) => {
           </h3>
         </div>
       </div>
-      <a href={`../assets/resumes/${language}/resume.pdf`} download={true}>
+      <a href={resumes[language]} download={true}>
         <button className="button__cv">
           {strings.languagePage[language].resume}
         </button>

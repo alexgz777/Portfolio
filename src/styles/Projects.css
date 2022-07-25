@@ -1,8 +1,9 @@
 .projects {
   text-align: center;
-  height: 35em;
-  margin-top: 10em;
-  margin-bottom: 10em;
+  height: 600px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 .project__span {
   font-size: 40px;
@@ -35,10 +36,7 @@
   align-items: center;
   justify-items: center;
 }
-/* .carrousel__item {
-  display: grid;
-  grid-template-columns: 1fr 10em;
-} */
+
 .button {
   width: 40px;
   height: 40px;

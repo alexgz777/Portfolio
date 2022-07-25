@@ -17,6 +17,9 @@
   display: grid;
   align-items: center;
 }
+.description{
+  padding: 8px;
+}
 .description:hover {
   text-decoration: underline;
 }

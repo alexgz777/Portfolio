@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import logoAlexis from "../assets/logoAlexis.png";
+import logoAlexis from "../assets/logos/logoAlexis.png";
 import en from "../assets/icons/en.png";
 import es from "../assets/icons/es.png";
 import pt from "../assets/icons/pt.png";

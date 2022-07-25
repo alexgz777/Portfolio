@@ -20,7 +20,7 @@ const Projects = ({ language }) => {
       return goItem();
     }, 2000);
   });
-console.log(projects[Item].image)
+
   return (
     <div id="Projects" className="projects">
       <span className="project__span">Projects</span>

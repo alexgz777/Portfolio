@@ -1,6 +1,12 @@
 .contact {
   text-align: center;
-  height: 35em;
+  height: 600px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.contact__title{
+  margin-top: 5em;
 }
 .contact__title:hover {
   background-image: linear-gradient(to right, #f4b324, #000 50%);
@@ -14,7 +20,6 @@
 .form {
   display: grid;
   grid-template-columns: repeat(200px, 1fr);
-  margin-top: 3em;
   justify-items: center;
 }
 .Name {
