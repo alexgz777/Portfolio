@@ -1,7 +1,7 @@
-import videogames from "../videogames";
-import dietlife from "../dietlife";
-import countries from "../countries";
-import dogs from "../dogs";
+import videogames from "../videogames.png";
+import dietlife from "../dietlife.png";
+import countries from "../countries.png";
+import dogs from "../dogs.png";
 
 export const projects = [
   {
