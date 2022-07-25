@@ -1,4 +1,4 @@
-import videogames from "../images/Videogames.png";
+import videogames from "../images/videogames.png";
 import dietlife from "../images/dietlife.png";
 import countries from "../images/countries.png";
 import dogs from "../images/dogs.png";
