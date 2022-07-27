@@ -30,7 +30,7 @@ const Projects = ({ language }) => {
             {"<"}
           </button>
           <div className="carrousel__item">
-            <a href={projects[Item].title}>
+            <a href={projects[Item].link}>
               <img
                 src={projects[Item].image}
                 className="projectImage"

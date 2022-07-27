@@ -8,7 +8,7 @@ export const projects = [
     id: 1,
     title: "Videogames",
     repository: "https://github.com/alexgz777/Videogames-project.git",
-    link: "",
+    link: "https://videogames-project-pink.vercel.app/",
     image: videogames,
   },
   {
