@@ -15,7 +15,7 @@ export const projects = [
     id: 2,
     title: "Countries",
     repository: "https://github.com/alexgz777/Countries-project.git",
-    link: "https://countries-project-indol.vercel.app/",
+    link: "https://countries-project-fz2olinoa-alexgz777.vercel.app/",
     image: countries,
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     id: 4,
     title: "Dogs",
     repository: "https://github.com/alexgz777/Dogs-webpage-project.git",
-    link: "",
+    link: "https://dogs-project-32gfzgmhb-alexgz777.vercel.app/",
     image: dogs,
   },
 ];
