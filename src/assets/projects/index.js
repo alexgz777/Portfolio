@@ -22,7 +22,7 @@ export const projects = [
     id: 3,
     title: "DietLife",
     repository: "https://github.com/alexgz777/DietLife-Project.git",
-    link: "",
+    link: "https://diet-life-project-c3i29v56n-alexgz777.vercel.app/",
     image: dietlife,
   },
   {

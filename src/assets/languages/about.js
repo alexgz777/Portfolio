@@ -114,14 +114,18 @@ const languageContact = {
     alert: "Perfeito, em breve entrarei em contato com você",
   },
 };
-//cargar proyectos
+
 const languageProjects = {
   Countries: {
-    en: ["This a project about countries and activities to make in there"],
-    es: [
-      "Este es un proyecto sobre paises y actividades que se pueden hacer allí"
+    en: [
+      "This a project about countries information and activities to make in there",
     ],
-    pt: ["Este é um projeto sobre paises e atividades que pode fazer lá"],
+    es: [
+      "Este es un proyecto sobre informacion de paises y actividades que se pueden hacer allí",
+    ],
+    pt: [
+      "Este é um projeto sobre informação de paises e atividades que pode fazer lá",
+    ],
   },
   DietLife: {
     en: ["This a project about food and type of diets to prepare"],
@@ -129,16 +133,14 @@ const languageProjects = {
     pt: ["Este é um projeto sobre comida y tipos de dietas para fazer"],
   },
   Videogames: {
-    en: ["This a project about games "],
-    es: [
-      "Este es un proyecto sobre paises y actividades que se pueden hacer allí"
-    ],
-    pt: ["Este é um projeto sobre paises e atividades que pode fazer lá"],
+    en: ["This a project about games info"],
+    es: ["Este es un proyecto sobre informacion de juegos"],
+    pt: ["Este é um projeto de info sobre jogos"],
   },
   Dogs: {
-    en: ["This a project about dogs "],
-    es: ["Este es un proyecto sobre "],
-    pt: ["Este é um projeto sobre "],
+    en: ["This a project about dogs breeds"],
+    es: ["Este es un proyecto de info sobre razas de perros"],
+    pt: ["Este é um projeto de informação sobre raças de caninos"],
   },
 };
 
